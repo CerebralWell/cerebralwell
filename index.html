@@ -3,87 +3,52 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CerebralWell | Think smarter. Live better.</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <title>CerebralWell</title>
   <style>
-    * {
+    body {
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Roboto', sans-serif;
       line-height: 1.6;
       background: #f4f4f4;
       color: #333;
     }
-
     header {
-      background: #1c1c1c;
+      background: #222;
       color: #fff;
-      padding: 1.5rem 2rem;
+      padding: 2rem 1rem;
       text-align: center;
     }
-
-    header h1 {
-      font-size: 2rem;
-    }
-
-    nav {
-      background: #333;
-      text-align: center;
-    }
-
-    nav a {
-      display: inline-block;
-      color: #fff;
-      padding: 1rem;
-      text-decoration: none;
-    }
-
-    nav a:hover {
-      background: #444;
-    }
-
     section {
-      padding: 2rem;
-      max-width: 900px;
+      padding: 2rem 1rem;
+      max-width: 800px;
       margin: auto;
     }
-
-    .hero {
-      text-align: center;
-      padding: 4rem 2rem;
-      background: linear-gradient(to right, #49c5b6, #327475);
+    h1, h2 {
+      color: #111;
+    }
+    a.channel-link {
+      display: inline-block;
+      margin-top: 1rem;
+      background: #cc0000;
       color: white;
+      padding: 0.6rem 1rem;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
     }
-
-    .hero h2 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
+    a.channel-link:hover {
+      background: #e60000;
     }
-
-    .products {
-      display: grid;
-      gap: 2rem;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-
-    .product-card {
-      background: white;
-      border-radius: 8px;
-      padding: 1rem;
-      box-shadow: 0 0 8px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-
     footer {
-      background: #1c1c1c;
-      color: #ccc;
+      background: #222;
+      color: #fff;
       text-align: center;
-      padding: 2rem;
-      margin-top: 2rem;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+    iframe {
+      border: none;
     }
   </style>
 </head>
@@ -91,51 +56,37 @@
 
   <header>
     <h1>CerebralWell</h1>
-    <p>Think smarter. Live better. It's time to grow.</p>
+    <p><em>Think smarter. Live better. It's time to grow.</em></p>
   </header>
-
-  <nav>
-    <a href="#mission">Our Mission</a>
-    <a href="#products">Products</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section class="hero">
-    <h2>Optimise Your Mind & Body</h2>
-    <p>Reputable, research-backed supplements and actionable wellness advice.</p>
-  </section>
 
   <section id="mission">
     <h2>Our Mission</h2>
     <p>
-      At CerebralWell, we're committed to combining neuroscience, nature, and nutrition to help you function at your best — mentally and physically. Our content is evidence-based and our products are sourced for quality and effectiveness.
+      At CerebralWell, we’re committed to helping people optimise brain health and overall wellness through education, motivation, and access to high-quality supplements. Our content bridges nature, science, and mental performance — empowering you to live and think better.
     </p>
   </section>
 
-  <section id="products">
-    <h2>Featured Products</h2>
-    <div class="products">
-      <div class="product-card">
-        <h3>Omega-3 Brain Complex</h3>
-        <p>Supports cognitive clarity, mood regulation, and neural inflammation reduction.</p>
-        <button>Buy Now</button>
-      </div>
-      <div class="product-card">
-        <h3>Daily Nootropic Stack</h3>
-        <p>A blend of adaptogens and nutrients to enhance focus and stress resilience.</p>
-        <button>Buy Now</button>
-      </div>
-      <!-- Add more products here -->
+  <section id="video">
+    <h2>Watch Our Latest Short</h2>
+    <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+      <iframe 
+        src="https://www.youtube.com/embed/MSkSv6Xzofw" 
+        style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
     </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email us: <a href="mailto:hello@cerebralwell.com">hello@cerebralwell.com</a></p>
+    <a 
+      class="channel-link" 
+      href="https://www.youtube.com/@CerebralWell" 
+      target="_blank" 
+      rel="noopener noreferrer">
+      Visit Our YouTube Channel
+    </a>
   </section>
 
   <footer>
-    <p>&copy; 2025 CerebralWell. All rights reserved.</p>
+    <p>© 2025 CerebralWell | Built by Wil | Hosted on GitHub Pages</p>
   </footer>
 
 </body>
