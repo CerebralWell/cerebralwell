@@ -13,20 +13,32 @@
       background: #f4f4f4;
       color: #333;
     }
+
     header {
       background: #222;
       color: #fff;
       padding: 2rem 1rem;
       text-align: center;
     }
+
+    .logo {
+      max-width: 150px;
+      margin-bottom: 1rem;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
     section {
       padding: 2rem 1rem;
       max-width: 800px;
       margin: auto;
     }
+
     h1, h2 {
       color: #111;
     }
+
     a.channel-link {
       display: inline-block;
       margin-top: 1rem;
@@ -37,9 +49,30 @@
       border-radius: 4px;
       font-weight: bold;
     }
+
     a.channel-link:hover {
       background: #e60000;
     }
+
+    iframe {
+      border: none;
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
     footer {
       background: #222;
       color: #fff;
@@ -47,16 +80,44 @@
       padding: 1rem;
       font-size: 0.9rem;
     }
-    iframe {
-      border: none;
-    }
   </style>
 </head>
 <body>
 
   <header>
-    <div>
-      <img src="logo.png" alt="CerebralWell logo" style="max-width: 150px; margin-bottom: 1rem; display: block; margin-left: auto; margin-right: auto;">
-    </div>
+    <img src="logo.png" alt="CerebralWell logo" class="logo">
     <h1>CerebralWell</h1>
-    <p><em>Think smarter. Live better. It's time to grow.</e
+    <p><em>Think smarter. Live better. It's time to grow.</em></p>
+  </header>
+
+  <section>
+    <h2>Our Mission</h2>
+    <p>
+      At CerebralWell, we’re committed to helping people optimise brain health and overall wellness through education, motivation, and access to high-quality supplements. Our content bridges nature, science, and mental performance — empowering you to live and think better.
+    </p>
+  </section>
+
+  <section>
+    <h2>Watch Our Latest Short</h2>
+    <div class="video-container">
+      <iframe 
+        src="https://www.youtube.com/embed/MSkSv6Xzofw" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>
+    <a 
+      class="channel-link" 
+      href="https://www.youtube.com/@CerebralWell" 
+      target="_blank" 
+      rel="noopener noreferrer">
+      Visit Our YouTube Channel
+    </a>
+  </section>
+
+  <footer>
+    <p>© 2025 CerebralWell | Built by Wil | Hosted on GitHub Pages</p>
+  </footer>
+
+</body>
+</html>
